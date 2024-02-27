@@ -15,8 +15,12 @@ During static testing, LoRa was found to work with arduino, sending raw data bac
 interpreted back. RPi could've been used to upload data to some form of server, but that required a reliable internet connection to be present via mobile hotspot, which wasn't feasible. Hence, this idea was dropped
 and only driver's display was used as vehicle diagnostics tool.
 
+QtGUI wasn't completed in time for competition, a pre-made open source library was used.
 
 **Possible optimizations:** 
 1. Update speed of data was slow; two data points per second is too slow for an offroad racing vehcile.
 2. Data needs to be transmitted to pit for vehicle status. Vehcile isn't always in line-of-sight.
 3. Sensors can directly be hooked up to RPi, eradicating the need of an entire controller. However, code reliability and update speed cannot be compromised to achieve this.
+
+![image](https://github.com/vikasdotvivek/RPi-Mega-Dashboard/assets/43683145/8076757d-fee7-40fd-8dfc-828c62d1ec02)
+
