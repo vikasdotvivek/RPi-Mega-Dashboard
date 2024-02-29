@@ -1,14 +1,14 @@
 # RPi-Mega-Dashboard
 
 **Design Concept:** Vehicle speed, fuel, engine RPM, gearbox temp etc. of an off-road ATV are crucial data, which needs to be updated on driver's display on dashboard, as well as sent to the pit via radio.
-Hall effect sensors for speed, fuel, and RPM are mounted on the vehicle, and wired up to an arduino which has an interrupt service routine running.
-Gearbox temperature measurement require thermocouple, a basic one-wire DS18B20 will suffice as temps don't reach that high, and if it does go out of range, means vehicle needs to be stopped and cooled down.
-Thercouple is also wired to same arduino, but this time is taking readings via normal polling routine.
+Hall effect sensors for speed, fuel, and RPM are mounted on the vehicle, and wired up to an Arduino which has an interrupt service routine running.
+Gearbox temperature measurement requires thermocouple, a basic one-wire DS18B20 will suffice as temps don't reach that high, and if it does go out of range, means vehicle needs to be stopped and cooled down.
+Thercouple is also wired to same arduino, but this time it's taking readings via normal polling routine.
 
-Arduino is then further wired up with Raspberry Pi via generic USB cable. This provides the arduino with power, as well as data lines. RPi expects serial data, spaces between the data depicts whatthe data actually is.
-A python script is running, expecting the serial data in a specified format, and will display the data on a 5inch diplay hooked up with RPi via HDMI cable.
-Sensors and arduino have about 5m of wires between them, as sensors are mouonted on one of the front wheel while controllers are mounted behind driver, on the firewall.
-Similarly for the display, it is mounted infront of the steering wheel, HDMI wire going back to the firewall.
+Arduino is then further wired up with Raspberry Pi via generic USB cable. This provides the arduino with power, as well as data lines. RPi expects serial data, spaces between the data depicts what the data actually is.
+A python script is running, expecting the serial data in a specified format, and will show data on a 5inch display hooked up with RPi via HDMI cable.
+Sensors and arduino have about 5m of wires between them, as sensors are mounted on one of the front wheels while controllers are mounted behind driver, on the firewall.
+Similarly for the display, it is mounted infront of the steering wheel, with HDMI wire going back to the firewall.
 
 
 During static testing, LoRa was found to work with arduino, sending raw data back to pit about 800m far away. But during dynamic testing, it was found to be incredibly unreliable and incoming data was too corrupt to be
@@ -26,13 +26,21 @@ QtGUI wasn't completed in time for competition, a pre-made open source library w
 
 
 **Some previous iterations:**
-![IMG-20240229-WA0002](https://github.com/vikasdotvivek/RPi-Mega-Dashboard/assets/43683145/eb1eccb5-7680-45aa-a9fb-12ff49b84963)
 
-![IMG-20240229-WA0001](https://github.com/vikasdotvivek/RPi-Mega-Dashboard/assets/43683145/11dd59b1-640b-4544-bed4-c770b6c9df71)
 
-![IMG-20240229-WA0004](https://github.com/vikasdotvivek/RPi-Mega-Dashboard/assets/43683145/ae5326c7-07d7-455a-90f5-9baa9e2ceef3)
+![image](https://github.com/vikasdotvivek/RPi-Mega-Dashboard/assets/43683145/24a351be-611d-4e54-887e-7f0d196ce43b)
 
-![IMG-20240229-WA0003](https://github.com/vikasdotvivek/RPi-Mega-Dashboard/assets/43683145/0e42ce40-c0fd-4e6b-9e93-5a6dd7b0360a)
+![image](https://github.com/vikasdotvivek/RPi-Mega-Dashboard/assets/43683145/4cc89bfa-cefb-451e-9d49-7d02b04abe14)
+
+![image](https://github.com/vikasdotvivek/RPi-Mega-Dashboard/assets/43683145/b9efe121-9a00-445e-8cfa-644a844b38c8)
+
+![image](https://github.com/vikasdotvivek/RPi-Mega-Dashboard/assets/43683145/f91ce5b9-c9ca-4e48-aee2-dfff3f4bcb26)
+
+
+
+
+
+
 
 
 
