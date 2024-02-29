@@ -24,3 +24,18 @@ QtGUI wasn't completed in time for competition, a pre-made open source library w
 
 ![image](https://github.com/vikasdotvivek/RPi-Mega-Dashboard/assets/43683145/8076757d-fee7-40fd-8dfc-828c62d1ec02)
 
+
+**Some previous iterations:**
+![IMG-20240229-WA0002](https://github.com/vikasdotvivek/RPi-Mega-Dashboard/assets/43683145/eb1eccb5-7680-45aa-a9fb-12ff49b84963)
+
+![IMG-20240229-WA0001](https://github.com/vikasdotvivek/RPi-Mega-Dashboard/assets/43683145/11dd59b1-640b-4544-bed4-c770b6c9df71)
+
+![IMG-20240229-WA0004](https://github.com/vikasdotvivek/RPi-Mega-Dashboard/assets/43683145/ae5326c7-07d7-455a-90f5-9baa9e2ceef3)
+
+![IMG-20240229-WA0003](https://github.com/vikasdotvivek/RPi-Mega-Dashboard/assets/43683145/0e42ce40-c0fd-4e6b-9e93-5a6dd7b0360a)
+
+
+
+
+
+
