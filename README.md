@@ -15,7 +15,7 @@ During static testing, LoRa was found to work with arduino, sending raw data bac
 interpreted back. RPi could've been used to upload data to some form of server, but that required a reliable internet connection to be present via mobile hotspot, which wasn't feasible. Hence, this idea was dropped
 and only driver's display was used as vehicle diagnostics tool.
 
-QtGUI wasn't completed in time for competition, a pre-made open source library was used.
+**Important:** QtGUI wasn't completed in time for competition, a pre-made open source library was used from ardiotech.com
 
 **Possible optimizations:** 
 1. Update speed of data was slow; two data points per second is too slow for an offroad racing vehcile.
