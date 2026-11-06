@@ -1,0 +1,75 @@
+{
+  "generator": "repository-static-triage",
+  "version": "1.0",
+  "repository": "vikasdotvivek/RPi-Mega-Dashboard",
+  "revision": "72176aeac3eb7049847befebbaa9fbf771914d26",
+  "tracked_files": 10,
+  "scanned": [
+    {
+      "path": "Hall Effect Trials (didn't implement)/my try 1.py",
+      "lines": 62,
+      "bytes": 1031
+    },
+    {
+      "path": "Only Visuals/gaugelib.py",
+      "lines": 253,
+      "bytes": 13904
+    },
+    {
+      "path": "Only Visuals/test_gauge.py",
+      "lines": 88,
+      "bytes": 1643
+    },
+    {
+      "path": "Pri___sec_RPM_and_CVT_temp/Pri___sec_RPM_and_CVT_temp.ino",
+      "lines": 192,
+      "bytes": 4142
+    },
+    {
+      "path": "two_rpm_meter/two_rpm_meter.ino",
+      "lines": 80,
+      "bytes": 1492
+    }
+  ],
+  "skipped": [
+    {
+      "path": ".github/workflows/code-improvement-review.yml",
+      "reason": "non-source format; content not audited"
+    },
+    {
+      "path": "Only Visuals/__pycache__/gaugelib.cpython-37.pyc",
+      "reason": "generated/vendor/review path"
+    },
+    {
+      "path": "Only Visuals/__pycache__/gaugelib.cpython-39.pyc",
+      "reason": "generated/vendor/review path"
+    },
+    {
+      "path": "Only Visuals/g1.png",
+      "reason": "non-source format; content not audited"
+    },
+    {
+      "path": "README.md",
+      "reason": "non-source format; content not audited"
+    }
+  ],
+  "manifests": [],
+  "conventional_test_paths": [
+    "Only Visuals/test_gauge.py"
+  ],
+  "findings": [
+    {
+      "rule": "python3-parse",
+      "priority": "P1",
+      "path": "Hall Effect Trials (didn't implement)/my try 1.py",
+      "line": 17,
+      "title": "Does not parse with the audit runner Python 3",
+      "recommendation": "Confirm the intended Python version. This may be legacy Python 2 rather than an unintended syntax error; compile with the supported interpreter.",
+      "status": "review-required",
+      "source": "https://github.com/vikasdotvivek/RPi-Mega-Dashboard/blob/72176aeac3eb7049847befebbaa9fbf771914d26/Hall%20Effect%20Trials%20%28didn%27t%20implement%29/my%20try%201.py#L17"
+    }
+  ],
+  "total_findings": 1,
+  "findings_omitted": 0,
+  "execution": "No repository code, tests, builds or hardware were executed."
+}
